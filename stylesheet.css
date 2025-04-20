@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 1, 28);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(11, 11, 55);
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(90, 90, 168);
+}
+
+.left {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.firstsection>div {
+    width: 90%;
+    max-width: 400px;
+}
+
+.leftsection {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.rightsection img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 23px 0px;
+}
+
+.purple {
+    color: rgb(145, 94, 192);
+}
+
+#element {
+    color: rgb(145, 94, 192);
+}
+
+hr {
+    border: 0;
+    background: rgb(40, 35, 65);
+    height: 1.3px;
+    margin: 40px 84px;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+    margin: 20px 0px;
+}
+
+.secondsection p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.thirdsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.thirdsection h1 {
+    font-size: 1.9rem;
+    margin: 20px 0px;
+}
+
+.thirdsection p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(145, 94, 192);
+}
+
+.proj {
+    margin: 12px 0;
+}
+
+.fourthsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.fourthsection h1 {
+    font-size: 1.9rem;
+    margin: 20px 0px;
+}
+
+.fourthsection .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    flex-basis: 45%;
+    justify-content: flex-start;
+}
+
+.contact p {
+    margin: 10px 15px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact i {
+    font-size: 2.1rem;
+}
+
+.sectionfifth {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.sectionfifth div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cvtext h1 {
+    font-size: 1.9rem;
+}
+
+.sectionfifth div img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.sectionfifth div button {
+    margin: 25px;
+    font-size: 1.2rem;
+    border: none;
+    color: rgb(145, 94, 192);
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .secondsection, .thirdsection, .fourthsection, .sectionfifth {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftsection {
+        font-size: 1.5rem;
+    }
+
+    .secondsection, .thirdsection, .fourthsection, .sectionfifth {
+        max-width: 100vw;
+    }
+
+    .secondsection p, .thirdsection p, .fourthsection p {
+        font-size: 1rem;
+    }
+
+    .fourthsection h1, .thirdsection h1, .secondsection h1, .sectionfifth h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact p {
+        margin: 5px;
+        font-size: 1rem;
+    }
+
+    .fourthsection i {
+        font-size: 1.5rem;
+    }
+
+    .cvtext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionfifth div img {
+        max-width: 300px;
+    }
+
+    .sectionfifth div button {
+        font-size: 1rem;
+        height: 35px;
+        width: 120px;
+    }
+
+    .contact {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftsection {
+        font-size: 1.2rem;
+    }
+
+    .secondsection, .thirdsection, .fourthsection, .sectionfifth {
+        max-width: 100vw;
+        padding: 10px;
+    }
+
+    .secondsection p, .thirdsection p, .fourthsection p {
+        font-size: 0.9rem;
+    }
+
+    .fourthsection h1, .thirdsection h1, .secondsection h1 {
+        font-size: 1.2rem;
+        /* color: rgb(145, 94, 192); */
+
+    }
+
+    .contact p {
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+
+    .fourthsection i {
+        font-size: 1.2rem;
+    }
+
+    .sectionfifth div img {
+        max-width: 200px;
+    }
+
+    .sectionfifth div button {
+        font-size: 0.8rem;
+        height: 30px;
+        width: 100px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact p {
+        margin: 5px 0;
+    }
+
+    .contact i {
+        margin-bottom: 5px;
+    }
+}
+
+/* skill */
+
+.fifthsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.fifthsection h1 {
+    font-size: 1.9rem;
+    margin: 20px 0px;
+    color: rgb(145, 94, 192); /* already applied using .purple class */
+}
+
+.skills-list p {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fifthsection h1 {
+        font-size: 1.5rem;
+    }
+
+    .skills-list p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fifthsection {
+        max-width: 100vw;
+        padding: 10px;
+    }
+
+    .fifthsection h1 {
+        font-size: 1.2rem;
+    }
+
+    .skills-list p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Achievements and Certificates Section */
+
+
+.sixthsection, .seventhsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.sixthsection h1, .seventhsection h1 {
+    font-size: 1.9rem;
+    margin: 20px 0px;
+    /* color: white; */
+}
+
+.achievements-list p, .certificates-list p {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: white;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .sixthsection h1, .seventhsection h1 {
+        font-size: 1.5rem;
+    }
+
+    .achievements-list p, .certificates-list p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sixthsection, .seventhsection {
+        max-width: 100vw;
+        padding: 10px;
+    }
+
+    .sixthsection h1, .seventhsection h1 {
+        font-size: 1.2rem;
+    }
+
+    .achievements-list p, .certificates-list p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
